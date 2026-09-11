@@ -12,3 +12,15 @@ main {
     justify-content: center;
     flex-direction: column;
 }
+
+button {
+    width: 320px;
+    padding: 12px;
+    margin: 40px auto;
+    background-color: #b85c00;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
