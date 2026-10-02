@@ -6,3 +6,8 @@ header {
   justify-content: space-between;
   padding: 0 24px;
 }
+
+a {
+  padding: 8px 16px;
+  margin: 0 8px;
+}
