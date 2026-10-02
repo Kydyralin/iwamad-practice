@@ -5,7 +5,7 @@ import LikeButton from "./LikeButton.tsx";
 import { LikesProvider } from "../context/LikesContext.tsx";
 
 describe("LikeButton", () => {
-  it("click increments by 2", async () => {
+  it("click increments by 1", async () => {
     // Arrange
     render(
       <LikesProvider>
@@ -19,6 +19,6 @@ describe("LikeButton", () => {
     await userEvent.click(button);
 
     // Assert
-    expect(button).toHaveTextContent("$ 4");
+    expect(button).toHaveTextContent("♥ 2");
   });
 });

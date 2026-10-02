@@ -10,7 +10,7 @@ const LikesContext = createContext<LikesContextValue | null>(null);
 export function LikesProvider({ children }: { children: ReactNode }) {
   const [likes, setLikes] = useState(0);
   function addLike() {
-    setLikes((n) => n + 2);
+    setLikes((n) => n + 1);
   }
 
   return <LikesContext value={{ likes, addLike }}>{children}</LikesContext>;

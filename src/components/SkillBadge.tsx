@@ -1,13 +1,10 @@
-import { type Skill } from "../data/skills";
-
-function SkillBadge({ skill }: { skill: Skill }) {
+import type { Skill } from "../data/skills.ts";
+import Tag from "./ui/Tag.tsx";
+type SkillBadgeProps = { skill: Skill };
+export default function SkillBadge({ skill }: SkillBadgeProps) {
   return (
-    <>
-      <div className="skill-badge" key={skill.id}>
-        {skill.label}
-      </div>
-    </>
+    <li className="skill-badge">
+      <Tag label={skill.label} />
+    </li>
   );
 }
-
-export default SkillBadge;

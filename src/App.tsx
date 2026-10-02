@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router";
-import Header from "./Header.tsx";
+import Header from "./components/Header.tsx";
 import Footer from "./Footer.tsx";
-import HomePage from "../pages/HomePage.tsx";
-import SkillsPage from "../pages/SkillsPage.tsx";
+import HomePage from "./pages/HomePage.tsx";
+import SkillsPage from "./pages/SkillsPage.tsx";
 
 export default function App() {
   return (

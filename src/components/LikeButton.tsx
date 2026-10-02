@@ -1,12 +1,12 @@
 import { useLikes } from "../context/LikesContext.tsx";
-import "./App.css";
+import Button from "./ui/Button.tsx";
 
 export default function LikeButton() {
   const { likes, addLike } = useLikes();
 
   return (
-    <button type="button" onClick={addLike}>
-      $ {likes}
-    </button>
+    <Button onClick={addLike} aria-label={`Like (${likes} likes)`}>
+      ♥ {likes}
+    </Button>
   );
 }
