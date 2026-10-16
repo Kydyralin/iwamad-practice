@@ -1,12 +1,15 @@
+/* Design tokens — the same names and values as the variables in your Figma file.
+   Figma "color/primary" becomes CSS "--color-primary": the slash becomes a dash. */
 :root {
   --color-primary: #1d4ed8;
   --color-on-primary: #ffffff;
   --color-text: #1f2937;
-  --color-text-muted: #9ca3af;
+  --color-text-muted: #4b5563; /* the design had #9ca3af — 2.54 : 1, fails AA */
   --color-surface: #ffffff;
   --color-border: #d1d5db;
-  --space-4: 16px;
+  --color-error: #b91c1c; /* new in Week 6 — 6.47 : 1 on the surface colour */
   --space-2: 8px;
+  --space-4: 16px;
   --space-6: 24px;
   --radius-md: 8px;
 }

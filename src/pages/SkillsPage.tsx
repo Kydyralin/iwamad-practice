@@ -1,5 +1,4 @@
 import SkillBadge from "../components/SkillBadge.tsx";
-import { type Skill } from "../data/skills.ts";
 
 export default function SkillsPage() {
   const skills = [

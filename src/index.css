@@ -1,3 +1,19 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0 auto;
+  max-width: 720px;
+  color: var(--color-text);
+}
+.site-footer {
+  color: var(--color-text-muted);
+  padding: var(--space-4);
+}
+.skill-badge {
+  display: inline-block;
+  margin-right: var(--space-2);
+  list-style: none;
+}
+
 /* Mobile first: the header stacks on a phone... */
 .site-header {
   display: flex;

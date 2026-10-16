@@ -4,6 +4,8 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/iwamad-practice/',
+  build: { outDir: 'docs' },
   plugins: [react()],
   test: {
     environment: 'jsdom',
